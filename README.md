@@ -16,8 +16,7 @@
 
 - Artist side 
   -   Homepage
-  -   Stake page
-  -   Signup page
+  -   Onboarding page
   -   Dashboard page
   -   Manage Release page
   -   Preview Release page
