@@ -22,10 +22,10 @@
   -   Manage Release page
   -   Preview Release page
 -   User Side
-  - Homepage
-  - Explore Collections
-  - Playlist page
-  - NFT Collections page (owned by them)
+  -   Homepage
+  -   Explore Collections
+  -   Playlist page
+  -   NFT Collections page (owned by them)
 
 ## 💻 Tech Stack
 
