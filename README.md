@@ -1,34 +1,9 @@
-<a name="readme-top"></a>
+  <a name="readme-top"></a>
   <h3 align="center">ChainTune</h3>
 </div>
 
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 # Welcome to ChainTune
 
@@ -38,12 +13,18 @@
 
 ## 📃Pages
 
--   Homepage
--   Stake page
--   Signup page
--   Dashboard page
--   Manage Release page
--   Preview Release page
+- Artist side 
+  -   Homepage
+  -   Stake page
+  -   Signup page
+  -   Dashboard page
+  -   Manage Release page
+  -   Preview Release page
+-   User Side
+  - Homepage
+  - Explore Collections
+  - Playlist page
+  - NFT Collections page (owned by them)
 
 ## 💻 Tech Stack
 
@@ -51,7 +32,9 @@
 -   Typescript
 -   Tailwindcss
 -   MongoDB
--   Docker
+-   IPFS
+-   Pinata
+-   Move
 
 ### Apps and Packages
 
@@ -110,6 +93,12 @@ The project is divided into 3 parts
 1. When the Listener first visits the platform, they can listen to their chosen song directly.
 2. If they like they can buy any of the music/album NFT and can become an owner. Once they are the owner, a certain portion of the Artists' earnings will be sent to the NFT owner as a loyalty, through which they can earn while listening to the songs.
 3. NFT holders will further be allowed to access Artists' private communities over Discord to have chats and activities within the fan group.
+4. Artists will be rewarded by the number of listens from the users.
+
+### Music Artist's Repository
+
+1. When the artist first visit the platform, the register themselves and connect their wallet to their account. Then they put a stake amount for their account. 
+2.  Then they're led to the dashboard from where they can either create new releases or manage their existing releases.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
