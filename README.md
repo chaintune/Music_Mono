@@ -185,7 +185,9 @@ The project is divided into 3 parts
 
 ### Music Listeners's Repository
 
-1. When the Listener first visits the platform, they can start listening the song directly. 
+1. When the Listener first visits the platform, they can listen to their chosen song directly.
+2. If they like they can buy any of the music/album NFT and can become an owner. Once they are the owner, a certain portion of the Artists' earnings will be sent to the NFT owner as a loyalty, through which they can earn while listening to the songs.
+3. NFT holders will further be allowed to access Artists' private communities over Discord to have chats and activities within the fan group.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
