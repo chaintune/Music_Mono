@@ -12,7 +12,7 @@ import Image from 'next/image'
 import IPFSManager from '../../utils/ipfs_upload';
 import { Network, Provider } from 'aptos';
 import { min } from 'date-fns';
-const mintingModuleAddress="0x8e54c6c0e3de38b47f3996de78151ddd6411e0c0687b0405287ee7f1dfbe4d27";
+const mintingModuleAddress=process.env.MODULE_ADDRESS;
 const provider = new Provider(Network.DEVNET);
 
 const reducer = (state: any, action: any) => {
