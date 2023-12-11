@@ -21,7 +21,7 @@
   -   Dashboard page
   -   Manage Release page
   -   Preview Release page
--   User Side
+- User Side
   -   Homepage
   -   Explore Collections
   -   Playlist page
@@ -84,6 +84,7 @@ This is an example of how to list things you need to use the software and how to
 ```
 NEXT_PUBLIC_JWT = ""
 MONGODB_URI = ""
+MODULE_ADDRESS =""
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
