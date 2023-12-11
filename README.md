@@ -104,8 +104,8 @@ The project is divided into 3 parts
 
 ### Music Artist's Repository
 
-1. When the artist first visit the platform, the register themselves and connect their wallet to their account. Then they put a stake amount for their account. 
-2.  Then they're led to the dashboard from where they can either create new releases or manage their existing releases.
+1. When the artist first visits the platform, the register themselves and connect their wallet to their account. Then they put a stake amount for their account. This allows us to limit the number of Artists on the the platformm. Staked amounts will be returned only if they cross a certain threshold of listens.
+2. Then they're led to the dashboard from where they can either create new releases or manage their existing releases.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
