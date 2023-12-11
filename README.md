@@ -78,6 +78,12 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    pnpm run dev
    ```
+5. create a .env file and paste the follwing content in there :
+
+```
+NEXT_PUBLIC_JWT = ""
+MONGODB_URI = ""
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
