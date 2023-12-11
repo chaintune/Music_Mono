@@ -2,14 +2,15 @@
   <h3 align="center">ChainTune</h3>
 </div>
 
-
-
-
 # Welcome to ChainTune
 
 ## 🚀 Main Features
 
--   Mint nft
+- Provide social presence
+- Earn to listen
+- claim ownership
+- Transparent payments
+- Privacy centric
 
 ## 📃Pages
 
