@@ -158,9 +158,6 @@ module chain_tune::locked_coins {
                 false
             };
         artist_account_exists
-
-        
-
     }
     // This function retrieves the current number of streams for a specific recipient's lock.
     // It verifies the existence of the sponsor's Locks resource and ensures the recipient has a lock.

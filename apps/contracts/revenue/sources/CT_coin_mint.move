@@ -32,7 +32,7 @@ module chain_tune::fa_coin {
             utf8(b"SA Coin"), /* name */
             utf8(ASSET_SYM), /* symbol */
             8, /* decimals */
-            utf8(b""), /* icon */
+            utf8(b"ipfs://QmUJP8LZU75PHenSaUo6HkSidyvxcU7ZDyawsbzzezWc47"), /* icon */
             utf8(b""), /* project */
         );
         // Create mint/burn/transfer refs to allow creator to manage the fungible asset.

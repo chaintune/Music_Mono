@@ -70,7 +70,7 @@ module chain_tune::Marketplace {
         counter: u64,
         minting_enabled: bool,
     }
-
+ 
     struct ModuleData has key {
         album: Table<String, CollectionData>,
         token_minting_events: EventHandle<TokenMintingEvent>,
@@ -329,12 +329,7 @@ module chain_tune::Marketplace {
 
         // get the collection minter and check if the collection minting is disabled or expired
         let module_data = borrow_global_mut<ModuleData>(@chain_tune);
-        // let counter: u64 = 1;
-        // let minting_enabled: bool = true;
-        // let temp_table: Table<String, TokenData> = table::new<String, TokenData>();
-        // let creator: address = @source_addr;
 
-        // table::add(&mut module_data.album, utf8(COLLECTION_NAME), CollectionData{song: temp_table, creator, counter, minting_enabled});
         let collection_data = table::borrow_mut(&mut module_data.album, utf8(COLLECTION_NAME));
 
 
@@ -392,11 +387,8 @@ module chain_tune::Marketplace {
         table::add(&mut collection_data.song, utf8(artist_name), TokenData{counter, minting_enabled, listing_enabled, token_data_id, download_counter});
     }
 
-    public entry fun set_collection_details(caller: &signer, album_name: vector<u8>, cid: vector<u8>, desc: vector<u8>, max_sup: u64) acquires ModuleData, TokenCap {
+    public entry fun set_collection_details(caller: &signer, album_name: vector<u8>, cid: vector<u8>, desc: vector<u8>, max_sup: u64) acquires ModuleData {
         let module_data = borrow_global_mut<ModuleData>(@chain_tune);
-        let market_cap = &borrow_global<TokenCap>(@chain_tune).cap;
-
-        // let resource_signer = account::create_signer_with_capability(market_cap);
         let creator = signer::address_of(caller);
 
         // create the nft collection
@@ -413,7 +405,7 @@ module chain_tune::Marketplace {
 
         table::add(&mut module_data.album, utf8(album_name), CollectionData{song, creator, counter, minting_enabled});
     }
-
+    
     /// Set if minting is enabled for this minting contract
     public entry fun set_minting_enabled_collection(caller: &signer, minting_enabled: bool, collection: vector<u8>) acquires ModuleData {
         let caller_address = signer::address_of(caller);
@@ -481,7 +473,6 @@ module chain_tune::Marketplace {
             download_counter
         });
 
-        // token::mint_token_to(receiver, @chain_tune, token_data_id, amount);
         let token_id_temp = token::mint_token(receiver, token_data_id, amount);
         token::direct_transfer(receiver, &resource_signer, token_id_temp, amount);
 
@@ -505,6 +496,9 @@ module chain_tune::Marketplace {
         
         batch_list_script(&resource_signer, creators, collection_names, token_names, property_versions, prices);
 
+        if(token_data.counter == 1){
+            collection_data.counter = collection_data.counter + 1;
+        };
         token_data.counter = token_data.counter + amount;
     }
 
