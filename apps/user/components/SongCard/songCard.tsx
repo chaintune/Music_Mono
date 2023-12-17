@@ -10,20 +10,18 @@ import {
     SongContainer,
     SongDetails,
     SongText,
-
     TopBar,
-
 } from "@styles/songCard/style";
 import banner from "@assets/banner.svg"
 import pocket from "@assets/pocket.svg"
 import menu from "@assets/more_horizontal.svg"
 import playButton from "@assets/play_button.png"
 import { album } from '@types';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, MouseEventHandler } from 'react';
 
 
 const songTitle = 'I am a Song';
-const SongCard = ({ album }: { album: album }) => {
+const SongCard = ({ album, clickDialog }: { album: album, clickDialog: MouseEventHandler<HTMLElement> }) => {
 
     const [albumDur, setAlbumDur] = useState<string>('')
 
@@ -46,7 +44,7 @@ const SongCard = ({ album }: { album: album }) => {
             
             Promise.all(durationPromises)
                 .then(durations => {
-                    const totalDuration: number = durations.reduce((acc: number, duration: number) => acc + duration, 0);
+                    const totalDuration = (durations as number[]).reduce((acc, duration) => acc + duration, 0);
                     setAlbumDur(formatDuration(totalDuration));
                 })
                 .catch(error => {
@@ -84,7 +82,7 @@ const SongCard = ({ album }: { album: album }) => {
                     <AlbumButton>Album</AlbumButton>
                     <Buttons>
                         <NextImageComponent src={pocket} alt="" width={48} height={48}/>
-                        <NextImageComponent src={menu} alt="" width={48} height={48}/>
+                        <NextImageComponent src={menu} alt="" width={48} height={48} onClick={clickDialog} style={{cursor: 'pointer'}} />
                     </Buttons>
 
                 </TopBar>

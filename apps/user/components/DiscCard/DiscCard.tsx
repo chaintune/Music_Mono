@@ -24,7 +24,7 @@ const DiscCard = ({name, id, link, img}: t) => {
         Get access to exclusive direct interactions with the artist, early
         announcements, and more...
       </Div5>
-      <Link href={link} target="_blank">
+      <Link href={link ? link : '/'} target="_blank">
         <Div6>
           <Div7>
             <Img2

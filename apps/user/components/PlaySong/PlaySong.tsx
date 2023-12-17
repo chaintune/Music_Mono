@@ -80,8 +80,8 @@ const playSong = () => {
                 // },
                 {
                     name: 'Lazarus',
-                    source: 'https://gateway.pinata.cloud/ipfs/QmWMhDYHBnBWZL37zavxgwvyQ1m6FYS9ZHBDTcgaDBfiKW',
-                    Image: bg,
+                    animation_url: 'https://gateway.pinata.cloud/ipfs/QmWMhDYHBnBWZL37zavxgwvyQ1m6FYS9ZHBDTcgaDBfiKW',
+                    image: bg,
                     attributes: [
                         {
                             trait_type: 'Genre',
@@ -98,8 +98,8 @@ const playSong = () => {
                 {
                     name: 'Yosemite',
                     // img_src: YosemiteImg,
-                    source: 'https://gateway.pinata.cloud/ipfs/QmbLTnRRGJmuiBy1QkD849C6QuqWUJ6vD8bVpZTM7EW8po',
-                    Image: Pocket,
+                    animation_url: 'https://gateway.pinata.cloud/ipfs/QmbLTnRRGJmuiBy1QkD849C6QuqWUJ6vD8bVpZTM7EW8po',
+                    image: Pocket,
                     attributes: [
                         {
                             trait_type: 'Genre',
@@ -115,8 +115,8 @@ const playSong = () => {
                 {
                     name: 'Dark paradise',
                     // img_src: AudioImg,
-                    source: 'https://gateway.pinata.cloud/ipfs/Qmd2j7ZFWFW7je66XMUwNU5z4TruVNcNsx3Hqv7LeFpHjc',
-                    Image: Pocket,
+                    animation_url: 'https://gateway.pinata.cloud/ipfs/Qmd2j7ZFWFW7je66XMUwNU5z4TruVNcNsx3Hqv7LeFpHjc',
+                    image: Pocket,
                     attributes: [
                         {
                             trait_type: 'Genre',
@@ -130,8 +130,8 @@ const playSong = () => {
                 },
                 {
                     name: 'Lazarus',
-                    source: 'https://gateway.pinata.cloud/ipfs/QmWMhDYHBnBWZL37zavxgwvyQ1m6FYS9ZHBDTcgaDBfiKW',
-                    Image: Pocket,
+                    animation_url: 'https://gateway.pinata.cloud/ipfs/QmWMhDYHBnBWZL37zavxgwvyQ1m6FYS9ZHBDTcgaDBfiKW',
+                    image: Pocket,
                     attributes: [
                         {
                             trait_type: 'Genre',
@@ -148,8 +148,8 @@ const playSong = () => {
                 {
                     name: 'Dark paradise',
                     // img_src: AudioImg,
-                    source: 'https://gateway.pinata.cloud/ipfs/Qmd2j7ZFWFW7je66XMUwNU5z4TruVNcNsx3Hqv7LeFpHjc',
-                    Image: Pocket,
+                    animation_url: 'https://gateway.pinata.cloud/ipfs/Qmd2j7ZFWFW7je66XMUwNU5z4TruVNcNsx3Hqv7LeFpHjc',
+                    image: Pocket,
                     attributes: [
                         {
                             trait_type: 'Genre',

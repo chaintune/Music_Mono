@@ -116,7 +116,7 @@ const StyledComponentsExample = () => {
         state.modal && (
           <StyledModal >
             <ModalContent>
-              <SearchPlaylist handleSearchClose={closeModal}/>
+              {/* <SearchPlaylist handleSearchClose={closeModal}/> */}
             </ModalContent>
           </StyledModal>
         )

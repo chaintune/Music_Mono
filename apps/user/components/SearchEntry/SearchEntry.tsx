@@ -14,7 +14,7 @@ interface TableProps {
     image: string;
 }
 
-const VotingCard: React.FC<TableProps> = ({ sno, title, artist, album, updatedAt, duration, image }) => {
+const SearchEntry: React.FC<TableProps> = ({ sno, title, artist, album, updatedAt, duration, image }) => {
 
     const initialState = {
         voted : false,
@@ -97,4 +97,4 @@ const VotingCard: React.FC<TableProps> = ({ sno, title, artist, album, updatedAt
     )
 }
 
-export default VotingCard;
+export default SearchEntry;

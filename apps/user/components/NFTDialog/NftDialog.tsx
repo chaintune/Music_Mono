@@ -1,14 +1,14 @@
 'use client'
 
-import React, {MouseEventHandler} from 'react';
+import React, { MouseEventHandler } from 'react';
 import styled from 'styled-components'; // Import styled-components or your preferred styling library
 
 import feel from "@assets/feel.png"
-import {LeftPart, NFTWrapper, ScrollableGrid, TextWrapper, TopInfoBar} from "@styles/nftDialog/style";
+import { LeftPart, NFTWrapper, ScrollableGrid, TextWrapper, TopInfoBar } from "@styles/nftDialog/style";
 import NFTSongContainer from "@components/NFTDialog/nftSongContainer";
 import cross from "@assets/cross.svg";
 import NextImage from "next/image";
-import {Button} from "@styles/PlaylistTable/style";
+import { Button } from "@styles/PlaylistTable/style";
 
 
 
@@ -38,7 +38,7 @@ const NFTDialog: React.FC<NFTDialogProps> = (props) => {
                     <p>
                         25/25 Sold
                     </p>
-                    <Button onClick={props.close}>
+                    <Button onClick={props.clickDialog}>
                         <NextImageComponent src={cross} alt="" width={48} height={48}/>
                     </Button>
 
@@ -54,7 +54,7 @@ const NFTDialog: React.FC<NFTDialogProps> = (props) => {
 };
 
 interface NFTDialogProps {
-   close:  MouseEventHandler<HTMLButtonElement>;
+   clickDialog:  MouseEventHandler<HTMLElement>;
 }
 
 const NextImageComponent = styled(NextImage)``;

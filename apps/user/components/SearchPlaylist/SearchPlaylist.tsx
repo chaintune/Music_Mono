@@ -12,7 +12,7 @@ import { album, song } from '@types';
 const options = ["Most Popular", "Most Recent", "Most Streamed"];
 
 
-const VotingCard = ({handleSearchClose, album}:{handleSearchClose: any, album: album}) => {
+const SearchPlaylist = ({ album }: { album: album }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
     const [songDurations, setSongDurations] = useState<Record<number, string>>({});
@@ -77,7 +77,7 @@ const VotingCard = ({handleSearchClose, album}:{handleSearchClose: any, album: a
                         ))}
                     </DropdownContent>) : ""}
                 </DropdownContainer>
-                <Wrap7 onClick={handleSearchClose} className='hover:cursor-pointer'>
+                <Wrap7 className='hover:cursor-pointer'>
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_b_111_1750)">
                             <circle cx="24" cy="24" r="24" fill="url(#paint0_linear_111_1750)" fill-opacity="0.5" />
@@ -147,4 +147,4 @@ const VotingCard = ({handleSearchClose, album}:{handleSearchClose: any, album: a
     )
 }
 
-export default VotingCard;
+export default SearchPlaylist;

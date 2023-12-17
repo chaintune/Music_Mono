@@ -1,29 +1,26 @@
 "use client"
 
-import SongCard from "@components/SongCard/songCard";
-import NFTSongContainer from "@components/NFTDialog/nftSongContainer";
-import NFTDialog from "@components/NFTDialog/NftDialog";
-import { Layout, SearchPlaylist } from "@components";
+// import NFTSongContainer from "@components/NFTDialog/nftSongContainer";
+import { Layout, SearchPlaylist, NFTDialog, SongCard } from "@components";
 import React, { useEffect, useContext, useState } from 'react';
-import {AlbumWrapper} from "@styles/nftDialog/style";
+import { AlbumWrapper } from "@styles/nftDialog/style";
 import { useParams } from "next/navigation";
-import DataContext from "@context/dataContext";
 import { album } from "@types";
 
 
 export default function Home() {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const params = useParams()
     const albumId = params.id
-    const [album, setAlbum] = useState([] as album[])
+    const [album, setAlbum] = useState<album>()
 
-    const closeDialog = () => {
-        setIsOpen(false);
+    const clickDialog = () => {
+        setIsOpen(!isOpen);
     };
-    const openDialog = () => {
-        setIsOpen(true);
-    }
+    // const openDialog = () => {
+    //     setIsOpen(true);
+    // }
 
     useEffect(() => {
         const getAlbumDetails = async () => {
@@ -42,16 +39,12 @@ export default function Home() {
             <div style={{padding: '0vh 2.8vw', display: 'flex', justifyContent: 'space-between'}}>
                 <div className="flex justify-between flex-col" style={{ width: '70.769vw', height: '70vh', overflowY: 'auto', gap: '1.860vh', scrollBehavior: 'smooth'}}>
                 <AlbumWrapper>
-                <SongCard album={album} />
+                    { album && <SongCard album={album} clickDialog={clickDialog} /> }
 
-                {
-                    isOpen && <NFTDialog close={closeDialog}/>
-                }
+                    { isOpen && <NFTDialog clickDialog={clickDialog}/> }
 
-                <SearchPlaylist album={album}/>
-
-            </AlbumWrapper>
-
+                    { album && <SearchPlaylist album={album}/> }
+                </AlbumWrapper>
                 </div>
             </div>
         </Layout>

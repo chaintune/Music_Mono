@@ -113,7 +113,7 @@ border-radius: 3.497vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    cursor: pointer;
 border: 1px solid linear-gradient(163.58deg, rgba(255, 255, 255, 0.06) -2.71%, rgba(255, 255, 255, 0) 102.71%);;
 `
 
