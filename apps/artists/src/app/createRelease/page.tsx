@@ -40,8 +40,7 @@ const CreateRelease = () => {
                 <div style={{display:'flex', justifyContent:'space-between'}}>
                 {/* <CoverArt /> */}
                 </div>
-                {(selected=="single")?(<TrackDetails selected="single" />):(<TrackDetails selected="album" />) }
-                
+                {(selected==="single")?(<TrackDetails selected="single" />):(<TrackDetails selected="album" />) }
                 {/* <LaunchNFT /> */}
 
         </Layout>
