@@ -52,7 +52,7 @@ export const Wrap11 = styled.div`
     align-items: center;
 `
 
-export const Wrap12 = styled.div`
+export const Wrap12 = styled.button`
 width: 3.357vw;
 height: 5.581vh;
 border-radius: 3.497vw;
@@ -69,9 +69,10 @@ export const Wrap111 = styled.div`
     width: 2.098vw;
     height: 3.488vh;
     /* border-radius: 50px; */
-    background: #24282D;
-    border: 2px solid #121418;
-    border-radius: 3.497vw;
+    // background: #24282D;
+    // border: 2px solid #121418;
+    // border-radius: 3.497vw;
+    bg-[url(https://jmp.sh/s/23Ian2tbs0iQr3O7zrbT)]
 `
 export const Wrap112 = styled.div`
 font-size: 1.119vw;
@@ -104,7 +105,7 @@ letter-spacing: 0em;
 color: #FFFFFF;
 `
 
-export const Wrap22 = styled.div`
+export const Wrap22 = styled.button`
     width: 3.357vw;
 height: 5.581vh;
 font-size: 1.119vw;

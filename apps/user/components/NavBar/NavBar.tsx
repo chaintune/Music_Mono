@@ -21,7 +21,7 @@ import {
   ConnectWalletButton,
   DisconnectedButton,
 } from "@styles/Navbar/style";
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import { ChangeEvent, FormEvent, useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { SearchBar } from "@components";
@@ -153,7 +153,9 @@ const Navbar = () => {
   const getColor = (path: string, content: string) => {
     return path === content ? "#FFF" : "#ffffff56";
   };
-
+  const redirectToArtist = () => {
+    window.location.replace("http://localhost:3001");
+  };
   return (
     <Nav>
       <Left>
@@ -177,10 +179,17 @@ const Navbar = () => {
       </Left>
       <Right>
         <Wrap1>
-          <Wrap11>
-            <Wrap111></Wrap111>
-            <Wrap112>24.40</Wrap112>
-          </Wrap11>
+          <div className="flex flex-row gap-2 w-16 items-center">
+            <img
+              src="https://svgshare.com/i/10hN.svg"
+              alt="Ellipse3"
+              id="Ellipse3"
+              className="w-6  ml-2"
+            />
+            <div className="font-['Aileron'] font-light leading-[24px] text-white">
+              0
+            </div>
+          </div>
           <Wrap12>
             <Image
               src={arrow}
@@ -191,15 +200,24 @@ const Navbar = () => {
         </Wrap1>
         <Wrap1>
           <Wrap11>
-            <Wrap111></Wrap111>
-            <Wrap112>2,485</Wrap112>
+            <Wrap111>
+              <img
+                src="https://svgshare.com/i/10wF.svg"
+                alt="Ellipse3"
+                id="Ellipse3"
+                className="w-6  ml-2"
+              />
+            </Wrap111>
+            <Wrap112>For Artists</Wrap112>
           </Wrap11>
           <Wrap12>
-            <Image
-              src={arrow}
-              alt=""
-              style={{ width: "0.9vw", height: "0.9vw" }}
-            />
+            <button onClick={redirectToArtist}>
+              <Image
+                src={arrow}
+                alt=""
+                style={{ width: "0.9vw", height: "0.9vw" }}
+              />
+            </button>
           </Wrap12>
         </Wrap1>
         <Wrap2>
