@@ -1,12 +1,12 @@
-'use client'
-import { Layout } from '@components'
-import './globals.css'
-import { Inter } from 'next/font/google'
-import { useEffect, useState } from 'react'
-import { song, artist, album } from '@types'
-import DataContext from '@context/dataContext'
+"use client";
+import { Layout } from "@components";
+import "./globals.css";
+import { Inter } from "next/font/google";
+import { useEffect, useState } from "react";
+import { song, artist, album } from "@types";
+import DataContext from "@context/dataContext";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
 //   title: 'Create Next App',
@@ -16,46 +16,46 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-
-  const [songs, setSongs] = useState<song[]>([])
-  const [artists, setArtists] = useState<artist[]>([])
-  const [albums, setAlbums] = useState<album[]>([])
+  const [songs, setSongs] = useState<song[]>([]);
+  const [artists, setArtists] = useState<artist[]>([]);
+  const [albums, setAlbums] = useState<album[]>([]);
 
   useEffect(() => {
     const fetchSongs = async () => {
-        const response = await fetch('/api/song');
-        const data = await response.json()
+      const response = await fetch("/api/song");
+      const data = await response.json();
 
-        setSongs(data)
+      setSongs(data);
 
-        const response2 = await fetch('/api/artist');
-        const data2 = await response2.json()
+      const response2 = await fetch("/api/artist");
+      const data2 = await response2.json();
 
-        setArtists(data2)
+      setArtists(data2);
 
-        const response3 = await fetch('/api/album');
-        const data3 = await response3.json()
+      const response3 = await fetch("/api/album");
+      const data3 = await response3.json();
 
-        setAlbums(data3)
+      setAlbums(data3);
 
-        // console.log(data)
-        console.log(data, data2, data3)
-    }
+      // console.log(data)
+      console.log(data, data2, data3);
+    };
 
-    fetchSongs()
-  }, [])
-
+    fetchSongs();
+  }, []);
 
   return (
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/idq4qqe.css" />
       </head>
-      <DataContext.Provider value={{songs, albums, artists}}>
-        <body className={inter.className} style={{ fontFamily: 'Aileron' }}>{children}</body>
-      </DataContext.Provider>
+      <body className={inter.className} style={{ fontFamily: "Aileron" }}>
+        <DataContext.Provider value={{ songs, albums, artists }}>
+          {children}
+        </DataContext.Provider>
+      </body>
     </html>
-  )
+  );
 }
