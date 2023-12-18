@@ -90,21 +90,21 @@ const Staking_page = () => {
           ChainTune is currently in limited mode.
         </div>
         <div className="w-[35vw] py-[1vw] pt-[0.7vw] backdrop-blur-[24px] shadow-[2px_4px_48px_0px_rgba(0,_0,_0,_0.5)] bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat flex flex-row justify-end gap-12 h-16 items-start px-2 rounded-[24px]">
-          <div className="text-xl font-['Aileron'] font-light leading-[28px] text-white mt-2">
+          <div className="text-xl font-['Aileron'] font-light leading-[28px] text-white mt-2 px-8">
             {isConnected
               ? walletManager.getAddress().slice(0, 15) + "..."
               : "Wallet"}
           </div>
           {isConnected ? (
             <button
-              className="text-sm font-['Aileron'] font-light leading-[20px] text-white backdrop-blur-[24px] bg-[rgba(38,_40,_44,_0.4)] flex flex-row justify-center pt-3 px-6 h-10 items-start rounded-[24px]"
+              className="text-sm font-['Aileron'] font-light leading-[20px] text-white backdrop-blur-[24px] bg-[rgba(38,_40,_44,_0.4)] flex flex-row justify-center border border-white pt-2 px-6 h-10 items-start rounded-[24px]"
               onClick={handleDisconnectWallet}
             >
               Wallet Connected
             </button>
           ) : (
             <button
-              className="text-sm font-['Aileron'] font-light leading-[20px] text-white backdrop-blur-[24px] bg-[rgba(38,_40,_44,_0.4)] flex flex-row justify-center pt-3 px-6 h-10 items-start rounded-[24px]"
+              className="text-sm font-['Aileron'] font-light leading-[20px] text-white backdrop-blur-[24px] bg-[rgba(38,_40,_44,_0.4)] flex flex-row justify-center pt-3 px-10 border border-white h-10 items-start rounded-[24px] "
               onClick={handleConnectWallet}
             >
               Connect Wallet
@@ -117,12 +117,14 @@ const Staking_page = () => {
               <div className="text-center font-['Aileron'] font-light leading-[22px] text-white bg-white/6 flex flex-row justify-center pt-3 w-12 h-12 items-start rounded-[100px]">
                 01
               </div>
-              <div className="text-center font-['Aileron'] font-light leading-[22px] text-white bg-white/6 flex flex-row justify-center pt-3 w-12 h-12 items-start rounded-[100px]">
+              <div className="text-center font-['Aileron','sans-serif'] font-light leading-[22px] text-white bg-white/6 flex flex-row justify-center pt-3 w-12 h-12 items-start rounded-[100px]">
                 02
               </div>
             </div>
             <div className="flex flex-col mt-px gap-4 w-5/6 items-start">
-              <div className="font-['Aileron'] font-light leading-[22px] text-white w-full">
+              <div className="
+              font-['Aileron'] font-light leading-[22px] text-white w-full
+              ">
                 Staking of APT 1 is required to become an artist.{" "}
               </div>
               <div className="font-['Aileron'] font-light leading-[22px] text-white w-full">
@@ -145,7 +147,7 @@ const Staking_page = () => {
             </button>
           ) : (
             <button
-              className="text-lg font-['Aileron'] leading-[20px]"
+              className="text-lg font-['Aileron'] leading-[20px] pb-4 "
               onClick={handleStakeAmount}
             >
               Stake and Continue
