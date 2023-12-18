@@ -264,7 +264,7 @@ const Signup = () => {
               <Image
                 src={upload}
                 alt=""
-                style={{ width: "5vw", height: "5vw" }}
+                style={{ width: "5vw", height: "5vw", marginTop:"18.5px" }}
               />
               <Instructions>
                 {profileImage === null ? (
@@ -281,7 +281,10 @@ const Signup = () => {
                   </div>
                 ) : (
                   <span style={{ fontSize: "2.2vh" }}>
-                    File Uploaded Successfully.
+                    <div/>
+                    <div/>
+                    <div/>
+                    File Uploaded Successfully
                   </span>
                 )}
               </Instructions>
