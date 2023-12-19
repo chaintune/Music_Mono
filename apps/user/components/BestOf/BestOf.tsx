@@ -18,39 +18,39 @@ const BestOf = () => {
         <ItemContainer>
           <ItemBackground />
           <ItemText>This is Arctic Monkeys</ItemText>
-          <ItemDetails>All the essential tracks, in one playlist</ItemDetails>
-          <ItemImage src={bg} alt="Description of the image" />
+          <ItemDetails>All the hits</ItemDetails>
+          <ItemImage src='https://svgshare.com/i/1100.svg' width={700} height={700} alt="Description of the image" />
           <ItemIndicator />
         </ItemContainer>
         <ItemContainer>
           <ItemBackground />
           <ItemText>This is RadioHead</ItemText>
-          <ItemDetails>All the essential tracks, in one playlist</ItemDetails>
-          <ItemImage src={bg} alt="Description of the image" />
+          <ItemDetails>All the essential tracks</ItemDetails>
+          <ItemImage src='https://svgshare.com/i/10zz.svg' width={700} height={700} alt="Description of the image" />
           <ItemIndicator />
         </ItemContainer>
         <ItemContainer>
           <ItemBackground />
           <ItemText>This is The Strokes</ItemText>
-          <ItemDetails>All the essential tracks, in one playlist</ItemDetails>
-          <ItemImage src={bg} alt="Description of the image" />
+          <ItemDetails>For true fans</ItemDetails>
+          <ItemImage src="https://svgshare.com/i/110E.svg" width={700} height={700} alt="Description of the image" />
           <ItemIndicator />
         </ItemContainer>
         <ItemContainer>
           <ItemBackground />
           <ItemText>This is Sanam</ItemText>
-          <ItemDetails>All the essential tracks, in one playlist</ItemDetails>
-          <ItemImage src={bg} alt="Description of the image" />
+          <ItemDetails>Timeless hits</ItemDetails>
+          <ItemImage src='https://svgshare.com/i/10z8.svg' width={700} height={700} alt="Description of the image" />
           <ItemIndicator />
         </ItemContainer>
         <ItemContainer>
           <ItemBackground />
           <ItemText>This is Aditya Rikhari</ItemText>
-          <ItemDetails>All the essential tracks, in one playlist</ItemDetails>
-          <ItemImage src={bg} alt="Description of the image" />
+          <ItemDetails>The next big thing</ItemDetails>
+          <ItemImage src='https://svgshare.com/i/1112.svg' width={700} height={700} alt="Description of the image" />
           <ItemIndicator />
         </ItemContainer>
-        <ItemContainer>
+        {/* <ItemContainer>
           <ItemBackground />
           <ItemText>Daily Mix 2</ItemText>
           <ItemDetails>Playlist • Made by ChainTune</ItemDetails>
@@ -112,7 +112,7 @@ const BestOf = () => {
           <ItemDetails>Playlist • Made by ChainTune</ItemDetails>
           <ItemImage src={bg} alt="Description of the image" />
           <ItemIndicator />
-        </ItemContainer>
+        </ItemContainer> */}
       </ContentContainer>
 
     </SidebarContainer>
