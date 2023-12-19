@@ -41,9 +41,9 @@ const AlbumsCard = () => {
                         {/* Streams Dropdown Content */}
                         {streamsDropdownOpen && (
                             <div className="cursor-pointer absolute flex flex-col items-center top-full left-0 mt-1 py-2 w-full bg-white shadow-lg rounded bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)]">
-                                <div onClick={() => handleDropdownSelect('Dropdown Item 1')}>Dropdown Item 1</div>
-                                <div onClick={() => handleDropdownSelect('Dropdown Item 2')}>Dropdown Item 2</div>
-                                <div onClick={() => handleDropdownSelect('Dropdown Item 3')}>Dropdown Item 3</div>
+                                <div onClick={() => handleDropdownSelect('Streams')}>Streams</div>
+                                <div onClick={() => handleDropdownSelect('Likes')}>Likes</div>
+                                <div onClick={() => handleDropdownSelect('Downloads')}>Downloads</div>
                             </div>
                         )}
                     </div>

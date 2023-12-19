@@ -122,9 +122,7 @@ const Staking_page = () => {
               </div>
             </div>
             <div className="flex flex-col mt-px gap-4 w-5/6 items-start">
-              <div className="
-              font-['Aileron'] font-light leading-[22px] text-white w-full
-              ">
+              <div className="font-['Aileron'] font-light leading-[22px] text-white w-full">
                 Staking of APT 1 is required to become an artist.{" "}
               </div>
               <div className="font-['Aileron'] font-light leading-[22px] text-white w-full">
