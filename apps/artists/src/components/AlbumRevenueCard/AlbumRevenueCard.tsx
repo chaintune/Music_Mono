@@ -92,7 +92,7 @@ const AlbumRevenueCard = () => {
                 NFTs
               </p>
               <p className="text-sm font-['Aileron'] leading-[22px] text-white">
-                CHT 0
+                0
               </p>
             </div>
             <div
