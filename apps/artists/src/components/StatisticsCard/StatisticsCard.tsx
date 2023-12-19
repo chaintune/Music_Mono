@@ -130,10 +130,10 @@ const StatisticsCard = () => {
                     </div>
                 </div>
                 <div className="flex flex-row ml-16 gap-16 w-5/6 items-start">
-                    <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
+                        <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
                         Feb
-                    </div>
-                    <div className="flex flex-row mr-px gap-12 w-1/3 items-start">
+                        </div>
+                
                         <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white mr-px">
                             Mar
                         </div>
@@ -146,22 +146,23 @@ const StatisticsCard = () => {
                         <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
                             Jun
                         </div>
-                    </div>
-                    <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white mr-1">
+                    
+                        <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white mr-1">
                         Jul
-                    </div>
-                    <div className="flex flex-row gap-12 w-1/6 items-start">
+                        </div>
+                    
                         <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
                             Aug
                         </div>
                         <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
                             Sep
                         </div>
-                    </div>
-                    <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white mr-px">
+                    
+                    
+                        <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white mr-px">
                         Oct
-                    </div>
-                    <div className="flex flex-row gap-12 w-1/6 items-start">
+                        </div>
+                    
                         <div className="text-center opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
                             Nov
                         </div>
@@ -171,7 +172,7 @@ const StatisticsCard = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        
     );
 }
 
