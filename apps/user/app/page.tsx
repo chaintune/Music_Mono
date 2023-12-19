@@ -35,8 +35,8 @@ const Home = () => {
           <NewLaunch />
           <CurrentSong />
           <Ele3>
-            <Ele31></Ele31>
-            <RecPlay />
+            {/* <Ele31></Ele31> */}
+            {/* <RecPlay /> */}
           </Ele3>
           <Community
             cardComponent={(data) => <DiscCard {...data} />}

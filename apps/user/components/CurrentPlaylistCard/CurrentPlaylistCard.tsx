@@ -45,7 +45,7 @@ export default function CurrentPlaylistProps({
           <Title>{title}</Title>
           <SubInfoWrapper>
             <h1 style={{ width: '4vw' }}>
-              {numSongs} Song{numSongs > 1 ? "s" : null}
+              {/* {numSongs} Song{numSongs > 1 ? "s" : null} */}
             </h1>
             <h1>·</h1>
             <h1>Made by {author.title}</h1>

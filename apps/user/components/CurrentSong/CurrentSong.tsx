@@ -16,14 +16,39 @@ const playlistData = {
         // Handle click event if needed
     },
 };
-const playlistItemData = {
+const playlistItemData1 = {
     index: 1,
     thumbnail: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
-    title: 'Song Title',
-    artists: ['Artist 1', 'Artist 2'],
-    albumName: 'Album Name',
-    duration: 180, // in seconds
+    title: 'Dark Paradise',
+    artists: [' Lana Del Ray'],
+    albumName: 'Born To Die',
+    duration: 181, // in seconds
 };
+const playlistItemData2 = {
+    index: 2,
+    thumbnail: 'https://svgshare.com/i/111a.svg',
+    title: 'Lazarus',
+    artists: ['Dave'],
+    albumName: 'Blackstar',
+    duration: 156, // in seconds
+};
+const playlistItemData3 = {
+    index: 3,
+    thumbnail: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+    title: 'Dark Paradise',
+    artists: [' Lana Del Ray'],
+    albumName: 'Born To Die',
+    duration: 181, // in seconds
+};
+const playlistItemData4 = {
+    index: 4,
+    thumbnail: 'https://svgshare.com/i/111R.svg',
+    title: 'Yosemite',
+    artists: ['Travis Scott'],
+    albumName: 'Astroworld',
+    duration: 199, // in seconds
+};
+
 const CurrentSong = () => {
     return (
         <div>
@@ -31,10 +56,10 @@ const CurrentSong = () => {
                 <Ele321>Currently Playing</Ele321>
                 <div style={{ width: '70.5vw', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <div style={{ width: '15vw' }}>   <CurrentPlaylistProps    {...playlistData} /></div>
-                    <Ele322 style={{ width: '45vw', height: '32vh' }}> <CurrentPlaylistItem {...playlistItemData} />
-                        <CurrentPlaylistItem {...playlistItemData} />
-                        <CurrentPlaylistItem {...playlistItemData} />
-                        <CurrentPlaylistItem {...playlistItemData} /></Ele322>
+                    <Ele322 style={{ width: '45vw', height: '32vh' }}> <CurrentPlaylistItem {...playlistItemData1} />
+                        <CurrentPlaylistItem {...playlistItemData2} />
+                        <CurrentPlaylistItem {...playlistItemData3} />
+                        <CurrentPlaylistItem {...playlistItemData4} /></Ele322>
                 </div>
 
 
