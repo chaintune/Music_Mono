@@ -17,7 +17,7 @@ const StatisticsCard = () => {
     };
     
     return (
-        <div className="w-[70vw] h-[32vw] px-[1vw] overflow-x-scroll  backdrop-blur-[24px] shadow-[2px_4px_48px_0px_rgba(0,_0,_0,_0.5)] bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat flex flex-col gap-8 items-start pt-2 pb-6 rounded-[24px]">
+        <div className="w-[90vw] h-[42vw] px-[1vw]   backdrop-blur-[24px] shadow-[2px_4px_48px_0px_rgba(0,_0,_0,_0.5)] bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat flex flex-col gap-8 items-start pt-2 pb-6 rounded-[24px]">
             <div className="flex flex-row gap-[1vw] justify-between w-full items-start">
                 <div className="flex flex-col mt-3 gap-4 w-1/3 items-start">
                     <div className="text-xl font-['Aileron'] font-light leading-[28px] text-white ml-4">
@@ -59,7 +59,7 @@ const StatisticsCard = () => {
                         </div>
                         <div className="flex flex-col mt-1 gap-1 w-2/5 items-start">
                             <div className="opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
-                                Listeners
+                                Streams
                             </div>
                             <div className="flex flex-row gap-1 w-full items-start">
                                 <div className="text-2xl font-['Aileron'] leading-[32px] text-white">
@@ -84,7 +84,7 @@ const StatisticsCard = () => {
                         </div>
                         <div className="flex flex-col mt-1 gap-1 w-2/5 items-start">
                             <div className="opacity-60 text-sm font-['Aileron'] leading-[20px] text-white">
-                                Listeners
+                                Contributors
                             </div>
                             <div className="flex flex-row gap-1 w-full items-start">
                                 <div className="text-2xl font-['Aileron'] leading-[32px] text-white">
