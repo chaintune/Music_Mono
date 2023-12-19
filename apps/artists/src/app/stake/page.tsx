@@ -97,10 +97,10 @@ const Staking_page = () => {
           </div>
           {isConnected ? (
             <button
-              className="text-sm font-['Aileron'] font-light leading-[20px] text-white backdrop-blur-[24px] bg-[rgba(38,_40,_44,_0.4)] flex flex-row justify-center border border-white pt-2 px-6 h-10 items-start rounded-[24px]"
+              className="text-sm font-['Aileron'] font-light leading-[20px] text-white backdrop-blur-[24px] bg-[rgba(38,_40,_44,_0.4)] flex justify-center border border-white pt-0.5 px-6 h-10 items-center rounded-[24px]"
               onClick={handleDisconnectWallet}
             >
-              Wallet Connected
+              Connected
             </button>
           ) : (
             <button

@@ -36,7 +36,7 @@ const CommunityCard = () => {
               Open to
             </div>
             <div className="border-solid border-white/6 backdrop-blur-[24px] bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat flex flex-row justify-between w-full items-start pt-1 pl-1 pr-4 hover:border rounded-lg">
-              <div className="text-sm ml-[0.5vw] font-['Aileron'] leading-[20px] text-white bg-white/6 flex flex-row justify-center mb-1 pt-2 w-2/5 h-8 items-start rounded-lg">
+              <div className="text-sm ml-[0.1vw] font-['Aileron'] leading-[15px] text-white bg-white/6 flex flex-row justify-center mb-1  w-2/5 h-8 items-start rounded-lg">
                 Top Contributors
               </div>
               <img

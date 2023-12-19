@@ -53,7 +53,7 @@ const EarningsCard = () => {
                                 NFTs
                             </div>
                             <div className="opacity-60 text-xs font-['Aileron'] leading-[16px] text-white">
-                                CHT 0
+                                0
                             </div>
                         </div>
                     </div>
