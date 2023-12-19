@@ -75,11 +75,11 @@ const TrackRecords =()=>{
                         </div>
                         <div>
                             <p className="text-l font-['Aileron'] font-light leading-[12px] text-white w-full" style={{opacity:`0.6`, marginBottom:`8px`}}>Priced at</p>
-                            <p className="text-xl font-['Aileron'] font-light leading-[20px] text-white w-full">0.345ETH</p>
+                            <p className="text-xl font-['Aileron'] font-light leading-[20px] text-white w-full">0.345CHT</p>
                         </div>
                         <div>
                             <p className="text-l font-['Aileron'] font-light leading-[12px] text-white w-full" style={{opacity:`0.6`, marginBottom:`8px`}}>Total Sales</p>
-                            <p className="text-xl font-['Aileron'] font-light leading-[20px] text-white w-full">0 ETH</p>
+                            <p className="text-xl font-['Aileron'] font-light leading-[20px] text-white w-full">0 CHT</p>
                         </div>
                         {/* <div>
                             <p className="text-l font-['Aileron'] font-light leading-[12px] text-white w-full" style={{opacity:`0.6`, marginBottom:`8px`}}>Collection of</p>
