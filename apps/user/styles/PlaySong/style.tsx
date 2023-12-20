@@ -1,8 +1,6 @@
-'use client'
-import styled from 'styled-components';
-import Image from 'next/image';
-
-
+"use client";
+import styled from "styled-components";
+import Image from "next/image";
 
 export const PlaySongContainer = styled.div`
   display: flex;
@@ -16,14 +14,13 @@ export const PlaySongContainer = styled.div`
   border-radius: 30px 30px 0px 0px;
   backdrop-filter: blur(120px);
   position: relative;
-  
 `;
 export const Sliderrange = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 4vh;
-`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4vh;
+`;
 
 export const SongDetailsContainer = styled.div`
   display: flex;
@@ -31,19 +28,15 @@ export const SongDetailsContainer = styled.div`
   width: 300px;
   margin: 0;
   /* margin-left: -45vw; */
-
 `;
 
 export const Songing = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90vw;
-    
-
-    `
-  ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+`;
 
 export const SongImage = styled.img`
   height: 96px;
@@ -51,6 +44,7 @@ export const SongImage = styled.img`
   border-radius: 10px;
   margin-left: 0.5vw;
   margin-bottom: 6.3vh;
+  padding: 0.5vw;
 `;
 
 export const SongInfo = styled.div`
@@ -75,8 +69,6 @@ export const ControlsContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0;
-  
-  
 `;
 
 export const ControlButton = styled.div`
@@ -98,8 +90,6 @@ export const PlayPauseButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 `;
 
 export const SongControlButton = styled.div`
@@ -114,25 +104,19 @@ export const Duration = styled.span`
 `;
 
 export const Volume = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-
-`
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+`;
 export const QueueMusic = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-left: 7vw;
-    align-items: center;
-    justify-content: center;
-
-`
+  display: flex;
+  flex-direction: row;
+  margin-left: 7vw;
+  align-items: center;
+  justify-content: center;
+`;
 export const Slider = styled.div`
-    display: flex;
-    flex-direction: row;
-
-`
-export const Vol = styled.div`
-  
-
-`
+  display: flex;
+  flex-direction: row;
+`;
+export const Vol = styled.div``;

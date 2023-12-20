@@ -1,13 +1,13 @@
 
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import CommunityPlaylist from '@components/communityPlaylist'
-import PlaySong from '@components/playSong'
+import CommunityPlaylist from '@components/CommunityPlaylist/CommunityPlaylist'
+import PlaySong from '@components/PlaySong/PlaySong'
 
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 import Navbar from '@components/NavBar/NavBar'
-import Sidebar from '@components/sidebar'
+import Sidebar from '@components/SideBar/SideBar'
 
 
 // const inter = Inter({ subsets: ['latin'] })

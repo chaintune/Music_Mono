@@ -39,7 +39,6 @@ const Navbar = () => {
   const [windowDefined, setWindowDefined] = useState<boolean>(false);
   const [address, setAddress] = useState<string | null>(null);
   const [connected, setConnected] = useState<boolean>(false);
-  const [isConnected, setIsConnected] = useState<boolean>(false);
   const [cid, setCid] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const pathname = usePathname();
@@ -47,19 +46,8 @@ const Navbar = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       setWindowDefined(true);
-      //if (window.aptos) {
-      //     window.location.href = '/form2';
-      //     setConnected(true);
-      // }
-      // console.log(window.aptos)
     }
   }, []);
-  /*useEffect(() => {
-        setIsConnected(walletManager.isWalletConnected());
-        if (walletManager.isWalletConnected()) {
-          setAddress(walletManager.getAddress());
-        }
-      }, []);*/
 
   const getAptosWallet = () => {
     if ("aptos" in window) {

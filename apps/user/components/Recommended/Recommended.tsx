@@ -31,12 +31,12 @@ const CommunityPlaylist = () => {
         </RoundedButton>
       </FlexContainer>
       <PlaylistContainer>
-        <RecommendedMixedCard1 />
         <RecommendedMixedCard2 />
         <RecommendedMixedCard3 />
         <RecommendedMixedCard4 />
         <RecommendedMixedCard5 />
         <RecommendedMixedCard6 />
+        <RecommendedMixedCard1 />
       </PlaylistContainer>
     </Container>
   );
