@@ -28,7 +28,7 @@ const CommunityCard = () => {
               />
             </div>
             <div className="font-['Aileron'] leading-[22px] text-white mt-0">
-              Connected to “Flume’s Tavern”
+              Connected to “Flume's Tavern”
             </div>
           </div>
           <div className="flex flex-col gap-1 w-full items-start">
