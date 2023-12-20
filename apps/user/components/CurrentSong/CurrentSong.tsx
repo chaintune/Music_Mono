@@ -52,7 +52,7 @@ const playlistItemData4 = {
 const CurrentSong = () => {
     return (
         <div>
-            <Ele31 style={{ width: '70.5vw', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <Ele31 style={{ width: '70.5vw',height: '42vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <Ele321>Currently Playing</Ele321>
                 <div style={{ width: '70.5vw', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <div style={{ width: '15vw' }}>   <CurrentPlaylistProps    {...playlistData} /></div>
