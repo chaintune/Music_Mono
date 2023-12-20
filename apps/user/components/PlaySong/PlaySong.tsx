@@ -80,7 +80,7 @@ const playSong = () => {
       setTracks(data.songs);
     };
 
-    if (params) getAlbumDetails();
+    if (params.id) getAlbumDetails();
     else {
       setTracks([
         // {
