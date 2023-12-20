@@ -21,7 +21,7 @@ const TrackRecords =()=>{
         <div style={{width:`100%`,height:`400px`,borderRadius:`24px`,backgroundColor:`rgba(31, 34, 40, 0.50)`,padding:`8px`}}>
             <div style={{padding:`10px 8px`}}>
                 <DropdownContainer>
-                    <DropdownButton onClick={handleDropdownToggle}>Sort by: {selectedOption || 'Select'} <DropdownIcon src={drop} alt='' /></DropdownButton>
+                    <DropdownButton onClick={handleDropdownToggle}>Sort by: {selectedOption || 'Most Recent'} <DropdownIcon src={drop} alt='' /></DropdownButton>
                     {isOpen?(<DropdownContent>
                         {options.map(option => (
                         <DropdownItem key={option} onClick={() => handleOptionSelect(option)}>
@@ -71,7 +71,7 @@ const TrackRecords =()=>{
                     <div style={{display:`flex`,flexDirection:`row`,justifyContent:`space-between`,alignItems:`center`,height:`88px`,borderRadius:`16px`,width:`100%`,background: `rgba(28, 30, 34, 0.80)`,padding:`18px 24px`}}>
                     <div>
                             <p className="text-l font-['Aileron'] font-light leading-[12px] text-white w-full" style={{opacity:`0.6`, marginBottom:`8px`}}>NFTs</p>
-                            <p className="text-xl font-['Aileron'] font-light leading-[20px] text-white w-full">1</p>
+                            <p className="text-xl font-['Aileron'] font-light leading-[20px] text-white w-full">10</p>
                         </div>
                         <div>
                             <p className="text-l font-['Aileron'] font-light leading-[12px] text-white w-full" style={{opacity:`0.6`, marginBottom:`8px`}}>Priced at</p>

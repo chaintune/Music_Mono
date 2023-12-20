@@ -31,7 +31,7 @@ const RevenueCard = () => {
                 </Heading>
                 <Wrap4>
                 <DropdownContainer>
-                    <DropdownButton onClick={handleDropdownToggle}>Sort by: {selectedOption || 'Select'} <DropdownIcon src={drop} alt='' /></DropdownButton>
+                    <DropdownButton onClick={handleDropdownToggle}>Sort by: {selectedOption || 'Most Recent'} <DropdownIcon src={drop} alt='' /></DropdownButton>
                     {isOpen?(<DropdownContent>
                         {options.map(option => (
                         <DropdownItem key={option} onClick={() => handleOptionSelect(option)}>

@@ -111,7 +111,7 @@ const Staking_page = () => {
             </button>
           )}
         </div>
-        <div className="backdrop-blur-[24px] shadow-[2px_4px_48px_0px_rgba(0,_0,_0,_0.5)] bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat flex flex-col gap-16 w-full h-56 items-start pl-4 py-4 rounded-[24px]">
+        <div className="backdrop-blur-[24px] shadow-[2px_4px_48px_0px_rgba(0,_0,_0,_0.5)] bg-[linear-gradient(159deg,_rgba(28,_30,_34,_0.33)_-9%,rgba(31,_34,_40,_0.5)_113%)] bg-cover bg-50%_50% bg-blend-normal bg-no-repeat flex flex-col gap-16 w-full h-52 items-start pl-4 py-4 rounded-[24px]">
           <div className="flex flex-row gap-3 w-2/3 items-start">
             <div className="flex flex-col gap-3 w-12 items-start">
               <div className="text-center font-['Aileron'] font-light leading-[22px] text-white bg-white/6 flex flex-row justify-center pt-3 w-12 h-12 items-start rounded-[100px]">
@@ -132,7 +132,7 @@ const Staking_page = () => {
               </div>
             </div>
           </div>
-          <div className="opacity-60 font-['Aileron'] underline font-light leading-[22px] text-white ml-2">
+          <div className="opacity-60 font-['Aileron'] underline font-light leading-[2px] text-white ml-2">
             Read our Blog Post here
           </div>
         </div>
@@ -147,7 +147,7 @@ const Staking_page = () => {
             </button>
           ) : (
             <button
-              className="text-lg font-['Aileron'] leading-[20px] pb-4 "
+              className="text-lg font-['Aileron'] leading-[20px] pb-4"
               onClick={handleStakeAmount}
             >
               Stake and Continue

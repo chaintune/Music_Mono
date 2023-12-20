@@ -174,8 +174,8 @@ const TrackDetails: React.FC<TrackDetailsProps> = (props) => {
         image_cid,
         audio_cid,
         max_sup,
-        amount,
-        price,
+        10,
+        0,
       ],
       function: `${moduleAddress}::MarketPlace::mint_and_list_token`,
       type: "entry_function_payload",
@@ -620,6 +620,7 @@ const TrackDetails: React.FC<TrackDetailsProps> = (props) => {
                   id="primaryGenre"
                   onChange={(e) => setPrimaryGenre(e.target.value)}
                 >
+                  <option value="select">Select</option>
                   <option value="pop">Pop</option>
                   <option value="rock">Rock</option>
                   <option value="hip-hop-rap">Hip-hop / Rap</option>
@@ -633,6 +634,7 @@ const TrackDetails: React.FC<TrackDetailsProps> = (props) => {
                   id="primaryLanguage"
                   onChange={(e) => setPrimaryLanguage(e.target.value)}
                 >
+                  <option value="select">Select</option>
                   <option value="english">English</option>
                   <option value="hindi">Hindi</option>
                   <option value="korean">Korean</option>
@@ -666,6 +668,7 @@ const TrackDetails: React.FC<TrackDetailsProps> = (props) => {
                   id="secondaryGenre"
                   onChange={(e) => setSecondaryGenre(e.target.value)}
                 >
+                  <option value="select">Select</option>
                   <option value="heavy-metal">Heavy Metal</option>
                   <option value="death-metal">Death Metal</option>
                   <option value="smooth-jazz">Smooth Jazz</option>
@@ -680,6 +683,7 @@ const TrackDetails: React.FC<TrackDetailsProps> = (props) => {
                   id="artists"
                   onChange={(e) => setfeaturedArtists(e.target.value)}
                 >
+                  <option value="select">Select</option>
                   <option value="taylor-swift">Taylor Swift</option>
                   <option value="ariana-grande">Ariana Grande</option>
                   <option value="beyonce">Beyoncé</option>
